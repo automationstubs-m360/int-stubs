@@ -15,5 +15,9 @@ public class IntStubsController {
         Map<String, Object> response  = Map.of("string", "srinivas!", "number", 23, "boolean", true);
         return response;
     }
-    
+
+    @PostMapping("/requestdata")        
+    public Map<String,Object> getResponse(Map<String,Object> requestdata){
+        return requestdata;
+    }
 }
